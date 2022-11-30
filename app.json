@@ -1,15 +1,17 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black",
-    "navigationStyle":"custom"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/waimai/waimai",
+        "pages/index/index",
+        "pages/didi/didi",
+        "pages/logs/logs"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText":"瑞幸咖啡"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
