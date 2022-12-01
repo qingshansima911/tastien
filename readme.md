@@ -86,21 +86,39 @@
     2 个scroll-view , 数据是有相关性
     2层嵌套的json
 
+    - 奶茶下程序的门店选择页
+    1. LBS Location Based Service 基于位置的服务
+        高德 LBS 技术
+        美团
+    2. wx.getLocation
+        lat long
+
 - css的技巧
-  1. 选择器优先级
-    p.md2  11
-    p.md2 + div.md3    11 + 11   22
-    标签1<类名10<id 100< 计算表达式
-    行内样式， 优先级更高  少用
-    !important 最高 慎用
-  2. 弹性布局
-    移动端 flex 可以解决大部分问题 
-    div  块级
-    布局的一种  跟外部不一样的布局， 桃花源记 
-    flex  内部   块级能力丢失  BFC 
-    Block formating context   
-  3. BEM 国际命名规范
-    Block 开始  rx_tab  新的组件
-    Element  内部元素的申明  rx_tab__item
-    Modifier rx_tab__item-on
-- 
+    1. 选择器优先级
+        p.md2  11
+        p.md2 + div.md3    11 + 11   22
+        标签1 < 类名10 < id100 < 计算表达式
+        行内样式， 优先级更高  少用
+        !important 最高 慎用
+    2. 弹性布局
+        移动端 flex 可以解决大部分问题 
+        div  块级
+        布局的一种  跟外部不一样的布局， 桃花源记 
+        flex  内部   块级能力丢失  BFC 
+        Block formating context   
+    3. BEM 国际命名规范
+        Block 开始  rx_tab  新的组件
+        Element  内部元素的申明  rx_tab__item
+        Modifier rx_tab__item-on
+    4. 运用常规的css 命名套路
+        - BEM 开启一个新的功能区域
+        - WX_btn .wx_btn-primary
+        - .page>.page__hd+.page__bd+.page__ft
+        - .cell>.cell__hd+.cell__bd+.cell__ft
+        - __Element 只做一级， 用简单词 不重复
+    5. 小程序不允许在wxss 里面background：url（本地图片）
+        - 小程序之所以小， 不要做太多的事情 产品定位
+        - 包的大小小于2M
+        - base64 格式， 图片格式
+            乱码一样， Google 图片格式 ，更小
+        - background: url()
